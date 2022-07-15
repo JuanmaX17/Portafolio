@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../img/logo.jpeg'
 import { AiOutlineHome } from 'react-icons/ai';
-import { MdEmojiPeople, MdOutlineContactPhone } from 'react-icons/md';
+import { MdEmojiPeople } from 'react-icons/md';
 import { SiWhatsapp } from 'react-icons/si';
 import { BsGithub, BsFileEarmarkSpreadsheet, BsBriefcase } from 'react-icons/bs';
 import CV from "../../CV/site.pdf"
@@ -26,8 +26,8 @@ export function Menu({setPage}) {
                   </div>
 
                   <div className='nav__netwoks nav__verticalLayout'>
-                        <a className='nav__net' href='https://wa.me/3054040360' target={"_black"}><SiWhatsapp /></a>
-                        <a className='nav__net' href='https://github.com/JuanmaX17' target={"_black"}><BsGithub/></a>
+                        <a className='nav__net' href='https://wa.me/3054040360' target="_blank" rel="noreferrer"><SiWhatsapp /></a>
+                        <a className='nav__net' href='https://github.com/JuanmaX17' target="_blank" rel="noreferrer"><BsGithub/></a>
                         <a className='nav__net' href={CV} download><BsFileEarmarkSpreadsheet /></a>
                   </div>
             </nav>
