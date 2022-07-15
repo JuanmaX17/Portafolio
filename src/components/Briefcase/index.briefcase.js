@@ -52,7 +52,7 @@ export function Briefcase() {
                 projects.map((item) => (
                     <article className='briefcase__item' key={item.name}>
                         <div className='briefcase__overlay' style={{backgroundImage: `url(${item.img})`}}>
-                        <a href={item.link} className='overlay-a' target="_blank"></a>
+                        <a href={item.link} className='overlay-a'> </a>
                         </div>
                         <div className='briefcase__text'>
                             <h4 className='briefcase__name'>{item.name}</h4>
