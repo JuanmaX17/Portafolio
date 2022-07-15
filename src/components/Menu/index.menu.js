@@ -4,7 +4,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { MdEmojiPeople, MdOutlineContactPhone } from 'react-icons/md';
 import { SiWhatsapp } from 'react-icons/si';
 import { BsGithub, BsFileEarmarkSpreadsheet, BsBriefcase } from 'react-icons/bs';
-import CV from "../../CV/CVJuanManuel.pdf"
+import CV from "../../CV/site.pdf"
 import "./menu.css";
 
 export function Menu({setPage}) {
