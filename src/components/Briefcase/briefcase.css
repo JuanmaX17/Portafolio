@@ -1,0 +1,104 @@
+.briefcase{
+    z-index: 10000;
+    width: 100%;
+    text-align: left;
+    padding-top: 20px;
+    padding-right: 44px;
+}
+
+
+.briefcase__items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px 50px;
+    padding-top: 50px;
+    
+}
+
+
+.briefcase__item{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+
+
+.briefcase__overlay{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.briefcase__overlay::after{
+    content: "Ir";
+    display: grid;
+    place-items: center ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top : 0;
+    right: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translate(-100%);
+    background-color: var(--overlay);
+    z-index: 1000;
+    transition: 0.48s transform ease-in-out;
+    cursor: pointer;
+}
+
+.overlay-a{
+    height: 50px;
+    width: 50px;
+    display: block;
+    z-index: 10000000;
+    
+}
+.overlay-a:hover{
+
+    border-bottom: 2px solid var(--colorText);
+}
+
+.briefcase__overlay:hover::after{
+    transform: translate(0%)
+}
+
+.briefcase__text{
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 50%;
+}
+
+.briefcase__desc{
+    text-align: left;
+    margin-top: 8px;
+}
+
+@media (max-width: 1020px) {
+
+    .briefcase__items{
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        
+    }
+
+    .briefcase__text{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1020px) {
+
+    .briefcase__items{
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        
+    }
+
+    .briefcase__text{
+        font-size: 0.8rem;
+    }
+}
